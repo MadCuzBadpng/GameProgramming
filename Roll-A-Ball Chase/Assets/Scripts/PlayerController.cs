@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public static float speed = 800.0f;
+    public static float size = 1f;
     public Text scoreText;
     private int count = 0;
     public Text winText;
@@ -18,6 +19,8 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
         GetComponent<Rigidbody>().AddForce(movement * speed * Time.deltaTime);
+
+        
     }
 
     void OnTriggerEnter(Collider other)

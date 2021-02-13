@@ -10,5 +10,6 @@ public class renderobjects : MonoBehaviour
     GameObject player = GameObject.FindWithTag("Player");
     rend = player.GetComponent<Renderer>();
     rend.material.SetColor("_Color", ColorSelectorscript.Ballc);
+    player.transform.localScale = Sizer.ballsize;
     }
 }

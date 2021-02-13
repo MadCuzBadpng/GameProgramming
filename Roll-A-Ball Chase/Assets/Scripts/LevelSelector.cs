@@ -8,11 +8,11 @@ public class LevelSelector : MonoBehaviour
     
     public static int theScene=0;
     public Slider slider;
-    public Toggle toggle;
 
     public void Awake()
     {
         slider = GameObject.FindWithTag("speed").GetComponent<Slider>();
+        
 
     }
 
@@ -21,10 +21,7 @@ public class LevelSelector : MonoBehaviour
         slider.onValueChanged.AddListener(delegate { sliderCallBack(slider); });
     }
 
-    public void toggleCallBack(Toggle toggle)
-    {
-        
-    }
+   
 
     public void sliderCallBack(Slider slider)
     {
