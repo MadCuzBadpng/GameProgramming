@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public static float speed = 800.0f;
-    public static float size = 1f;
+    
     public Text scoreText;
     private int count = 0;
     public Text winText;

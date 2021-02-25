@@ -8,13 +8,13 @@ public class Sizer : MonoBehaviour
 
     public Toggle toggle;
     public GameObject playerObject;
-    public static Vector3 ballsize;
+    public static Vector3 ballsize = new Vector3(1,1,1);
 
     // Start is called before the first frame update
     void Start()
     {
-        toggle = GameObject.Find("Toggle").GetComponent<Toggle>();
-        playerObject = GameObject.FindWithTag("Player");
+        toggle = GameObject.Find("BigBallToggle").GetComponent<Toggle>();
+        //playerObject = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
